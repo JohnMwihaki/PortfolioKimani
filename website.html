@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <style>
+    .cert-group {
+  margin-top: 10px;
+}
+
+.cert-img {
+  width: 140px;
+  border-radius: 10px;
+  margin-top: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.cert-img:hover {
+  transform: scale(1.05);
+}
+
+  </style>
+
+
+
+</head>
+<body>
+    <header>
+        <div class="logo">fmatrix</div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleSidebar()">
+          <i class='bx bx-menu'></i>
+        </div>
+      </header>
+    
+      <!-- Sidebar -->
+      <div class="sidebar" id="sidebar">
+        <div class="close-btn" onclick="toggleSidebar()">
+          <i class='bx bx-x'></i>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#work">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          
+      </div>
+  
+
+  <section class="home">
+    <div class="home-content">
+      <h3>Hello, It's Me</h3>
+      <h1>John Mwihaki</h1>
+      <h3>And I'm a <span class="typing"></span></h3>
+<p>Welcome to my creative space! I’m passionate about transforming ideas into impactful digital experiences. <br>Whether you're looking to build a powerful app, a stunning website, or an engaging user interface, <br>I'm here to bring your vision to life with skill, precision, and creativity.</p>
+
+      <div class="social-media">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="https://www.linkedin.com/in/john-mwihaki-b8a11b267/"><i class='bx bxl-linkedin'></i></a>
+      </div>
+      <a href="#" class="btn">Download CV</a>
+    </div>
+
+    <div class="home-img">
+      <div class="img-box">
+        <img src="images/mine.png">
+      </div>
+    </div>
+  </section>
+  <!--the about section -->
+  <section class="about" id="about">
+    <div class="about-container">
+      <div class="about-img">
+        <img src="images/mine.png">
+      </div>
+  
+      <div class="about-content" id="about">
+        <h2>About<span style="Color:blue;">Me</span></h2>
+        <p>
+          I'm a passionate and creative developer with a strong focus on building clean, user-friendly, and impactful digital experiences. With a keen eye for design and detail, I specialize in creating responsive websites, innovative web applications, and intuitive user interfaces that not only look great but function seamlessly.<br><br>
+          Whether it's developing a dynamic app, crafting engaging UI/UX designs, or bringing ideas to life through code, I strive to deliver solutions that help clients stand out in the digital world. Welcome to my portfolio — a showcase of dedication, creativity, and the journey of turning ideas into reality.
+        </p>
+        
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+          <p class="tab-links" onclick="openTab('experience')">Experience</p>
+          <p class="tab-links" onclick="openTab('education')">Education</p>
+        </div>
+  
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>HTML</span>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 95%;">95%</div>
+                </div>
+              </li>
+              <li>
+                <span>CSS</span>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 90%;">90%</div>
+                </div>
+              </li>
+              <li>
+                <span>JavaScript</span>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 70%;">70%</div>
+                </div>
+              </li>
+              <li>
+                <span>React.js</span>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 45%;">45%</div>
+                </div>
+              </li>
+              <li>
+                <span>Network Essentials</span>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 70%;">70%</div>
+                </div>
+              </li>
+              <li>
+                <span>Data analysis</span>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 65%;">65%</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+          
+  
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>2023 - Present</span><br>Frontend Developer at self pace projects</li>
+          </ul>
+        </div>
+  
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2022- present</span><br>BSc. Software Engineering - Murang’a University</li>
+            <li><span>2018 - 2022</span><br>G.G Boys High School</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--my work-->
+  <section class="work" id="work">
+    <div class="section-title">My Work</div>
+    <div class="work-container">
+      <div class="work-box">
+        <img src="images/recruit.jpeg">
+        <div class="work-overlay">
+          <h4>Automatic Recruitment System</h4>
+          <p>The app connects you to talented people around the world.</p>
+        </div>
+      </div>
+      <div class="work-box">
+        <img src="images/mobile.jpeg">
+        <div class="work-overlay">
+          <h4>Quotes App</h4>
+          <p>No thnking getting inspiration and spread knowledge around the world.</p>
+        </div>
+      </div>
+      <div class="work-box">
+        <img src="images/car.jpeg">
+        <div class="work-overlay">
+            <h4>Car Booking System</h4>
+            <p>A smart and efficient platform that allows users to book rides instantly, schedule trips in advance, and manage bookings seamlessly with real-time tracking and driver details.</p>
+            
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!--services-->
+  <section class="services" id="services">
+  <h2>My Services</h2>
+  <div class="service-cards">
+    <div class="service-card">
+      <div class="service-image" style="background-image: url('images/download.png');">
+        <div class="service-content">
+            <h4>UI/UX Design</h4>
+            <p>Visually appealing and user-centric interfaces designed to enhance user interaction and satisfaction. I focus on creating intuitive layouts, consistent visual identity, and seamless user journeys across all devices.</p>
+            
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-image" style="background-image: url('images/images.jpeg');">
+        <div class="service-content">
+            <h4>Web Development</h4>
+            <p>Modern and responsive websites built with clean code and intuitive design. From landing pages to complex web applications, I deliver high-performing, secure, and SEO-optimized solutions tailored to your brand.</p>
+            
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-image" style="background-image: url('images/quotes.jpeg');">
+        <div class="service-content">
+            <h4>App Development</h4>
+            <p>Custom mobile solutions tailored to meet your business goals. I create fast, scalable, and user-friendly apps for both Android and iOS platforms, ensuring seamless performance and a great user experience.</p>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!--talking with me-->
+  <section class="contact" id="contact">
+    <div class="contact-container">
+      <!-- Left Section: Contact Info -->
+      <div class="contact-left">
+        <h2><strong>Let's Talk</strong></h2>
+        <p><i class="fas fa-paper-plane"></i> <a href="mailto:kimanimw21@gmail.com">kimanimw21@gmail.com</a></p>
+        <p><i class="fas fa-phone-alt"></i> <a href="tel:0701112238">0701112238</a></p>
+
+        <div class="social-media">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/in/john-mwihaki-b8a11b267/"><i class='bx bxl-linkedin'></i></a>
+          </div>
+          <a href="images/RESUME.pdf" download class="btn">Download CV</a>
+
+      </div>
+  
+      <!-- Right Section: Contact Form -->
+      <div class="contact-right">
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSd8ySeqwFveL2A-AgLTO11L525vfG2sk3vP5cSw4ziLY5h8VA/viewform?usp=pp_url" method="POST" target="_blank">
+          <input type="text" name="entry.2082208692" placeholder="Your Name" required>
+          <input type="email" name="entry.25682792"placeholder="Your Email" required>
+          <textarea rows="6" name="entry.1739884813" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2024 John Mwihaki | All Rights Reserved.</p>
+  </footer>
+  
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+  
+    function openTab(tabName) {
+      let tabLinks = document.querySelectorAll(".tab-links");
+      let tabContents = document.querySelectorAll(".tab-contents");
+  
+      tabLinks.forEach(link => link.classList.remove("active-link"));
+      tabContents.forEach(tab => tab.classList.remove("active-tab"));
+  
+      document.getElementById(tabName).classList.add("active-tab");
+      event.currentTarget.classList.add("active-link");
+    }
+  
+  
+  const typedTextSpan = document.querySelector(".typing");
+    const textArray = ["Frontend Developer", "Graphic Designer", "App Developer","Network administrator"];
+    let typingDelay = 100;
+    let erasingDelay = 50;
+    let newTextDelay = 2000;
+    let textArrayIndex = 0;
+    let charIndex = 0;
+    
+    function type() {
+      if (charIndex < textArray[textArrayIndex].length) {
+        typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, typingDelay);
+      } else {
+        setTimeout(erase, newTextDelay);
+      }
+    }
+    
+    function erase() {
+      if (charIndex > 0) {
+        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, erasingDelay);
+      } else {
+        textArrayIndex++;
+        if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+        setTimeout(type, typingDelay + 200);
+      }
+    }
+    
+    document.addEventListener("DOMContentLoaded", () => {
+      if (textArray.length) setTimeout(type, newTextDelay + 250);
+    });
+    </script>
+</body>
+</html>
